@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1A47AA062028E21800ED663E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA052028E21800ED663E /* AppDelegate.swift */; };
-		1A47AA082028E21800ED663E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA072028E21800ED663E /* ViewController.swift */; };
+		1A47AA082028E21800ED663E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA072028E21800ED663E /* HomePageViewController.swift */; };
 		1A47AA0B2028E21800ED663E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A47AA092028E21800ED663E /* Main.storyboard */; };
 		1A47AA0D2028E21800ED663E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A47AA0C2028E21800ED663E /* Assets.xcassets */; };
 		1A47AA102028E21800ED663E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A47AA0E2028E21800ED663E /* LaunchScreen.storyboard */; };
 		1A47AA1B2028E21800ED663E /* RandomPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA1A2028E21800ED663E /* RandomPhotoTests.swift */; };
 		1A47AA262028E21800ED663E /* RandomPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA252028E21800ED663E /* RandomPhotoUITests.swift */; };
+		1A47AA342028E23B00ED663E /* RandomPhotoDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA332028E23B00ED663E /* RandomPhotoDisplayVC.swift */; };
+		1A47AA362028E27100ED663E /* UnsplashPhotoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA352028E27100ED663E /* UnsplashPhotoAPI.swift */; };
+		1A47AA382028E2A600ED663E /* RandomPhotoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA372028E2A600ED663E /* RandomPhotoParser.swift */; };
+		1A47AA3A2028E33F00ED663E /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47AA392028E33F00ED663E /* CustomPresentAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		1A47AA022028E21800ED663E /* RandomPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A47AA052028E21800ED663E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A47AA072028E21800ED663E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A47AA072028E21800ED663E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		1A47AA0A2028E21800ED663E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A47AA0C2028E21800ED663E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A47AA0F2028E21800ED663E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		1A47AA212028E21800ED663E /* RandomPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A47AA252028E21800ED663E /* RandomPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoUITests.swift; sourceTree = "<group>"; };
 		1A47AA272028E21800ED663E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A47AA332028E23B00ED663E /* RandomPhotoDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoDisplayVC.swift; sourceTree = "<group>"; };
+		1A47AA352028E27100ED663E /* UnsplashPhotoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoAPI.swift; sourceTree = "<group>"; };
+		1A47AA372028E2A600ED663E /* RandomPhotoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoParser.swift; sourceTree = "<group>"; };
+		1A47AA392028E33F00ED663E /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				1A47AA052028E21800ED663E /* AppDelegate.swift */,
-				1A47AA072028E21800ED663E /* ViewController.swift */,
+				1A47AA072028E21800ED663E /* HomePageViewController.swift */,
 				1A47AA092028E21800ED663E /* Main.storyboard */,
 				1A47AA0C2028E21800ED663E /* Assets.xcassets */,
 				1A47AA0E2028E21800ED663E /* LaunchScreen.storyboard */,
 				1A47AA112028E21800ED663E /* Info.plist */,
+				1A47AA332028E23B00ED663E /* RandomPhotoDisplayVC.swift */,
+				1A47AA352028E27100ED663E /* UnsplashPhotoAPI.swift */,
+				1A47AA372028E2A600ED663E /* RandomPhotoParser.swift */,
+				1A47AA392028E33F00ED663E /* CustomPresentAnimationController.swift */,
 			);
 			path = RandomPhoto;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A47AA082028E21800ED663E /* ViewController.swift in Sources */,
+				1A47AA082028E21800ED663E /* HomePageViewController.swift in Sources */,
 				1A47AA062028E21800ED663E /* AppDelegate.swift in Sources */,
+				1A47AA382028E2A600ED663E /* RandomPhotoParser.swift in Sources */,
+				1A47AA3A2028E33F00ED663E /* CustomPresentAnimationController.swift in Sources */,
+				1A47AA342028E23B00ED663E /* RandomPhotoDisplayVC.swift in Sources */,
+				1A47AA362028E27100ED663E /* UnsplashPhotoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
