@@ -32,14 +32,9 @@ class UnsplashPhotoAPI: NSObject {
         }
         
         let urlRequest = URLRequest(url: url)
-        
         let defaultConfig = URLSessionConfiguration.default
-        
         let session = URLSession(configuration: defaultConfig)
-        
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
-            
-            
             
             if let error = error {
                 print(error)
@@ -48,7 +43,6 @@ class UnsplashPhotoAPI: NSObject {
                 do {
                     let jsonDecoder = JSONDecoder()
                     let imageURL = try jsonDecoder.decode(RandomPhoto.self, from: data)
-                    print("\(imageURL.urls.small)")
                     completion(.success(response: RandomPhotoResponseData(result: imageURL)))
                 } catch {
                     completion(.failure(error: error))

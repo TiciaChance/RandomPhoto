@@ -29,6 +29,7 @@ enum PresentingDirection {
         }
     }
 }
+
 class PresentAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     var presentingDirection: PresentingDirection

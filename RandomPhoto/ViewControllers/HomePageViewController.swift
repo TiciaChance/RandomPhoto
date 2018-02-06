@@ -10,13 +10,18 @@ import UIKit
 
 class HomePageViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    let unsplashAPI = UnsplashPhotoAPI()
-    //otherwise will be using Unsplash before it's actually instantiated
-    let presentAnimationController = PresentAnimationController(direction: .left)
+    @IBOutlet weak var getPhotoButton: UIButton!
+    let presentAnimationController = PresentAnimationController(direction: .bottom)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .purple
+        view.backgroundColor = .white
+        
+        let viewFrame = view.frame
+        getPhotoButton.backgroundColor = .black
+        getPhotoButton.layer.cornerRadius = 15
+        getPhotoButton.setTitleColor(.red, for: .normal)
+        getPhotoButton.frame = CGRect(x: viewFrame.width/2 - 50, y: viewFrame.height/2 - 25, width: 100, height: 50)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,4 +35,3 @@ class HomePageViewController: UIViewController, UIViewControllerTransitioningDel
         return presentAnimationController
     }
 }
-
